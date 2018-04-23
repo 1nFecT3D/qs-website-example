@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <title>QS-Test | Niv's solution</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="globe"></a></li>
+                <li><a href="#" title="help">Help</a></li>
+                <li><a href="#" title="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- header\hero -->
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="images/logo.png" alt="Logo" class="header__logo">
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Lorem ipsum</span>
+                    <span class="heading-primary--sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati atque nam in tempora modi impedit.</span>                
+                </h1>
+                <hr>
+                <h2 class="heading-secondary">
+                    <span class="heading-secondary--main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quidem amet placeat molestiae qui.</span>
+                    <span class="heading-secondary--sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati atque nam in</span>                
+                </h2>
+            </div>
+            <a href="#" class="btn btn--blue btn--animated"><i class="fas fa-chevron-down"></i></a>
+        </header>
+        <!-- Gallery -->
+        <section class="gallery">
+            <hr>
+            <div class="gallery__list">
+                <ul class="image-list">
+                    <li>
+                        <a href="#"><img src="images/move_list_2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/move_list_3.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/move_list_4.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/move_list_5.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/move_list_6.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gallery__image-box">
+                <a href="#" class="btn btn--circle btn--previous"><i class="fas fa-chevron-left"></i></a>
+                <div class="image-display"><img src="images/move_list_1.jpg" alt=""></div>
+                <a href="#" class="btn btn--circle btn--next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="gallery__description">
+                <p class="title">Lorem ipsum</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor eligendi eveniet dignissimos temporibus inventore, vel magnam repellendus, fugit eaque dolorum deleniti unde totam ea obcaecati exercitationem ut! Doloribus, explicabo.</p>
+            </div>
+        </section>
+        <!-- Products -->
+        <div class="bottom-section-wrapper" id="particles-js">
+            <section class="products">
+                <!-- product 1 -->
+                <div class="products__product">
+                    <p class="heading--rate">Good Deal</p>
+                    <p class="heading--title">Product 1</p>
+                    <div class="image-wrapper"><img src="images/prod1.jpg" alt=""></div>
+                    <div class="product-price">
+                        <span class="price--old">20</span>
+                        <span class="price--new">15</span>
+                        <span class="price--teaser">your discounted price</span>
+                    </div>
+                    <a href="#" class="btn btn--yellow">
+                        <span class="text">get good deal</span>
+                        <span class="icon"></span>
+                    </a>
+                </div>
+                <!-- product 2 -->
+                <div class="products__product">
+                    <p class="heading--rate">better deal</p>
+                    <p class="heading--title">product 2</p>
+                    <div class="image-wrapper"><img src="images/prod2.jpg" alt=""></div>
+                    <div class="product-price">
+                        <span class="price--old">30</span>
+                        <span class="price--new">20</span>
+                        <span class="price--teaser">your discounted price</span>
+                    </div>
+                    <a href="#" class="btn btn--yellow">
+                        <span class="text">get better deal</span>
+                        <span class="icon"></span>
+                    </a>
+                </div>
+                <!-- product 3 -->
+                <div class="products__product bestseller">
+                    <p class="heading--rate">Bestseller</p>
+                    <p class="heading--title">product</p>
+                    <div class="image-wrapper"><img src="images/prod3.jpg" alt=""></div>
+                    <div class="product-price">
+                        <span class="price--old">30</span>
+                        <span class="price--new">20</span>
+                        <span class="price--teaser">your discounted price</span>
+                    </div>
+                    <a href="#" class="btn btn--yellow">
+                        <span class="text">get bestseller</span>
+                        <span class="icon"></span>
+                    </a>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="footer">
+                <span class="vises--accepts"></span>
+                <span class="vises--risk"></span>
+                <span class="vises--guarantee"></span>
+            </footer>
+        </div>
+    </div>
+    <script src="script/particles.min.js"></script>
+    <script>
+    particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+        console.log('particles.js loaded - callback');
+    });
+    </script>
+</body>
+
+</html>

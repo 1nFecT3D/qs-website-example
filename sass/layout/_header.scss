@@ -1,0 +1,31 @@
+.header {
+    background-image: linear-gradient( to bottom,
+    rgba($color-grey, .1) 55%,
+    rgba($color-black, 1) 88%),
+    url('../images/part1_m.jpg');
+    background-repeat: no-repeat;
+    background-position: 53% 0;
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    &__logo {
+        height: 6.5rem;
+    }
+
+    &__text-box {
+        padding: 30rem 1rem 0;
+    }
+
+    hr {
+        width: 33%;
+        border: .1rem solid rgba($color-white, .3);
+    }
+    .btn:hover {
+        transform: translateY(-.3rem);
+    }
+}

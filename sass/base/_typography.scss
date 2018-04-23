@@ -1,0 +1,56 @@
+body {
+    font-family: "Martel", arial;
+    font-weight: 200;
+    font-size: 1.6rem;    
+    color: $color-white;    
+}
+
+.heading-primary {
+    color: $color-white;    
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    &--main {
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+        font-size: 4rem;
+        font-weight: 600;        
+        animation: moveInLeft 1s ease-out;
+    }
+
+    &--sub {
+        font-size: 2.1rem;        
+        font-weight: 200;
+        color: $color-grey;
+        animation: moveInRight 1s ease-out;
+    }
+}
+
+.heading-secondary {
+    color: $color-white;    
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+
+    &--main {
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;        
+        animation: moveInRight 1s ease-out;
+    }
+
+    &--sub {
+        font-size: 1.4rem;        
+        font-weight: 200;
+        color: $color-grey;
+        animation: moveInLeft 1s ease-out;
+    }
+}
+
+.gallery {
+    color: $color-black;
+}

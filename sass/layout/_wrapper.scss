@@ -1,0 +1,19 @@
+.wrapper {
+    background-color: $color-white;    
+}
+.bottom-section-wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background: linear-gradient( to right bottom,
+    rgba($color-secondary, .8) 45%,
+    rgba($color-black, .4) 55%),
+    $color-primary;
+	canvas {
+		order: 1;
+		position: absolute;		
+		z-index: 1;
+	}
+}

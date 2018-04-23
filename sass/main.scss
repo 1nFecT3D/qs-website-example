@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Martel:200,900|Raleway:300,600,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "./vendors/fontawesome/fontawesome.scss";
+@import "./vendors/fontawesome/fa-solid.scss";
+
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/utilities";
+@import "base/animations";
+@import "base/typography";
+
+@import "components/button";
+@import "components/imageList";
+
+@import "layout/wrapper";
+@import "layout/nav";
+@import "layout/header"; 
+@import "layout/gallery"; 
+@import "layout/products"; 
+@import "layout/footer"; 
+ 
+@import "pages/home";

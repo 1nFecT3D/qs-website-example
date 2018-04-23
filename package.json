@@ -1,0 +1,13 @@
+{
+  "name": "nivs-qa-solution",
+  "version": "1.0.0",
+  "description": "landing page for quality score",
+  "author": "niv'o",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-error-handle": "^1.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
