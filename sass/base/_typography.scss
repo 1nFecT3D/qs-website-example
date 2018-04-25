@@ -1,53 +1,67 @@
 body {
     font-family: "Martel", arial;
     font-weight: 200;
-    font-size: 1.6rem;    
-    color: $color-white;    
+    font-size: 1.6rem;
+    color: $color-white;
 }
 
 .heading-primary {
-    color: $color-white;    
+    color: $color-white;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
-
+    @media screen and (min-width: $break) {
+        width: 50%;
+    }
     &--main {
         text-transform: uppercase;
         font-family: "Raleway", sans-serif;
         font-size: 4rem;
-        font-weight: 600;        
+        font-weight: 600;
         animation: moveInLeft 1s ease-out;
+        @media screen and (min-width: $break) {
+            font-size: 6.5rem;
+            word-spacing: 100vw;
+        }
     }
 
     &--sub {
-        font-size: 2.1rem;        
+        font-size: 2.1rem;
         font-weight: 200;
         color: $color-grey;
         animation: moveInRight 1s ease-out;
+        @media screen and (min-width: $break) {
+            font-size: 3rem;
+        }
     }
 }
 
 .heading-secondary {
-    color: $color-white;    
+    color: $color-white;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     margin: 3rem 0;
-
+    @media screen and (min-width: $break) {
+        width: 55%;
+    }
     &--main {
         text-transform: uppercase;
         font-family: "Raleway", sans-serif;
         font-size: 1.4rem;
-        font-weight: 600;        
+        font-weight: 600;
         animation: moveInRight 1s ease-out;
     }
 
     &--sub {
-        font-size: 1.4rem;        
+        font-size: 1.4rem;
         font-weight: 200;
         color: $color-grey;
         animation: moveInLeft 1s ease-out;
+        @media screen and (min-width: $break) {
+            font-size: 1.2rem;
+        }
     }
 }
 

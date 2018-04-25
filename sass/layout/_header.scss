@@ -19,11 +19,23 @@
 
     &__text-box {
         padding: 30rem 1rem 0;
+        @media screen and (min-width: $break) {
+            max-width:120rem;
+            margin: 0 auto;
+        }
     }
-
+    &__btn{
+        @media screen and (min-width: $break) {
+            max-width:120rem;
+            margin: 0 auto;
+        }   
+    }
     hr {
         width: 33%;
         border: .1rem solid rgba($color-white, .3);
+        @media screen and (min-width: $break) {
+            width: 10%;
+        }
     }
     .btn:hover {
         transform: translateY(-.3rem);

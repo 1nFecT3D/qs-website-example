@@ -13,3 +13,10 @@ html {
 body {
     box-sizing: border-box;    
 }
+
+.desktop-only {
+	display: none !important;
+	@media screen and (min-width: $break) {
+		display: inherit !important;
+	}
+}

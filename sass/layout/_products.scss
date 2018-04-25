@@ -1,7 +1,11 @@
-.products {
-    order: 1;
+.products {    
     position: relative;
     z-index: 2;
+    @media screen and (min-width: $break) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
     &__product {
         margin: 3rem 1rem;
         padding: 1rem;
@@ -12,7 +16,17 @@
         background-color: $color-white;
         border-radius: 3%;
         position: relative;
+        @media screen and (min-width: $break) {
+            width: 36rem;
+            height: 45rem;
+        }
         &.bestseller {
+            @media screen and (min-width: $break) {                
+                height: 48rem;
+                .image-wrapper{
+                    padding: 6.7rem 0 6rem 0;
+                }
+            }
             &:after {
                 background: linear-gradient(to bottom left, $color-teal, $color-pink);
                 content: '';
@@ -30,6 +44,9 @@
         }
         &:first-child {
             margin-top: 4rem;
+            @media screen and (min-width: $break) {
+                margin-top: 0rem;
+            }
         }
         &last-child {
             margin-bottom: 4rem;

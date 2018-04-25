@@ -8,7 +8,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 3.7rem;    
+    height: 3.7rem;
     font-size: 1.2rem;
     color: $color-grey;
     border-bottom: .1rem solid rgba($color-grey, .3);
@@ -24,32 +24,41 @@ nav {
         &:not(:first-child) {
             padding-left: 1rem;
             border-left: .1rem solid rgba($color-grey, .3);
-        }        
-        &:not(:first-child){
-        	a::after {
-            	content: '';
-            	display: inline-block;
-            	padding: 0 1rem;
-            	color: darken($color-grey, 30);
-        	}
+        }
+        &:not(:first-child) {
+            a::after {
+                content: '';
+                display: inline-block;
+                padding: 0 1rem;
+                color: darken($color-grey, 30);
+            }
         }
         &:first-child {
             a::before {
-            	content: '';
-            	display: block;
-            	height: 3.7rem;
-            	width: 3rem;
+                content: '';
+                display: block;
+                height: 3.7rem;
+                width: 3rem;
                 background: url('../images/globe.png') no-repeat center;
             }
         }
-        &:not(:first-child){ 
-        	a::after {
+        &:not(:first-child) {
+            a::after {
                 font-family: 'Font Awesome 5 Free';
-            	content: fa-content($fa-var-chevron-down);
-        	}
+                content: fa-content($fa-var-chevron-down);
+            }
         }
         &:last-child::after {
             padding: 0 2rem 0 1rem;
+        }
+        &.click-bank {
+            a {
+                background: url('../images/clickbank.png') no-repeat center;
+                padding: 0 4.5rem;
+                &::after {
+                    content: '';
+                }
+            }
         }
     }
 }

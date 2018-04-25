@@ -17,6 +17,7 @@
                 <li><a href="#" title="globe"></a></li>
                 <li><a href="#" title="help">Help</a></li>
                 <li><a href="#" title="contact">Contact Us</a></li>
+                <li class="desktop-only click-bank"><a href="#" title="bank"></a></li>
             </ul>
         </nav>
         <!-- header\hero -->
@@ -27,7 +28,7 @@
             <div class="header__text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">Lorem ipsum</span>
-                    <span class="heading-primary--sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati atque nam in tempora modi impedit.</span>                
+                    <span class="heading-primary--sub">Lorem ipsum dolor sit amet, consectetur elit. Numquam obcaecati atque nam in tempora modi impedit.</span>                
                 </h1>
                 <hr>
                 <h2 class="heading-secondary">
@@ -35,7 +36,9 @@
                     <span class="heading-secondary--sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati atque nam in</span>                
                 </h2>
             </div>
-            <a href="#" class="btn btn--blue btn--animated"><i class="fas fa-chevron-down"></i></a>
+            <div class="header__btn">
+                <a href="#" class="btn btn--blue btn--animated"><i class="fas fa-chevron-down"></i></a>
+            </div>
         </header>
         <!-- Gallery -->
         <section class="gallery">
@@ -43,26 +46,34 @@
             <div class="gallery__list">
                 <ul class="image-list">
                     <li>
-                        <a href="#"><img src="images/move_list_2.jpg" alt=""></a>
+                        <a href="#"><img src="images/move_list_2.jpg" alt=""><span class="desktop-only">Lorem ipsum</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/move_list_3.jpg" alt=""></a>
+                        <a href="#"><img src="images/move_list_3.jpg" alt=""><span class="desktop-only">Lorem ipsum</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/move_list_4.jpg" alt=""></a>
+                        <a href="#"><img src="images/move_list_4.jpg" alt=""><span class="desktop-only">Lorem ipsum</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/move_list_5.jpg" alt=""></a>
+                        <a href="#"><img src="images/move_list_5.jpg" alt=""><span class="desktop-only">Lorem ipsum</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/move_list_6.jpg" alt=""></a>
+                        <a href="#"><img src="images/move_list_6.jpg" alt=""><span class="desktop-only">Lorem ipsum</span></a>
                     </li>
                 </ul>
             </div>
             <div class="gallery__image-box">
-                <a href="#" class="btn btn--circle btn--previous"><i class="fas fa-chevron-left"></i></a>
                 <div class="image-display"><img src="images/move_list_1.jpg" alt=""></div>
-                <a href="#" class="btn btn--circle btn--next"><i class="fas fa-chevron-right"></i></a>
+                <div class="buttons-container">
+                    <a href="#" class="btn btn--circle btn--previous">
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="desktop-only btn-text">previous</span>
+                    </a>
+                    <a href="#" class="btn btn--circle btn--next">
+                        <span class="desktop-only btn-text">next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
             </div>
             <div class="gallery__description">
                 <p class="title">Lorem ipsum</p>
